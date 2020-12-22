@@ -1,0 +1,336 @@
+body, html {
+  margin: 0;
+  height: 100%;
+  font-family: serif;
+  font-size: 16px;
+  margin-top: 0;
+}
+
+a{
+  color: #66b2b2;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EAF6D6;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 6rem;
+  color: #66b2b2;
+  font-family: 'lobster', cursive;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #66b2b2;
+}
+h3 {
+  font-size: 1.25rem;
+  color: #aee6e6;
+  margin: auto;
+}
+
+hr {
+  width: 30%;
+  background-color: white;
+  border-style: none;
+  height: 1px;
+}
+
+P{
+    line-height: 1.5;
+}
+
+td {
+  height: 50px;
+
+}
+
+
+.top-container {
+  background-image: url("/Users/lindiechenou/Desktop/Web Development/CSS-My Site/Image/background1.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0;
+
+}
+.middle {
+    background-color: #e08f62;
+
+}
+.middle-container {
+
+  text-align: center;
+  padding: 40px 160px 40px 160px;
+  margin-left: 100px;
+  margin-right: 100px;
+
+}
+
+.bottom-container {
+  text-align: center;
+  background-color: #f9e0ae;
+  padding: 10px 0 10px;
+  font-family: 'lobster', sans-serif;
+}
+
+.textarea {
+  padding-top: 250px;
+  text-align: center;
+  color: #66b2b2;
+  font-size: 20px;
+  position: relative;
+  top: 28%;
+  z-index: 4;
+  max-width: 100%;
+  padding: 40px 180px;
+}
+
+.profile{
+  position: relative;
+  width: 80%;
+  margin: auto auto 100px auto;
+  text-align: left;
+}
+
+.info {
+  color: white;
+}
+
+.info-text {
+  position: relative;
+  width: 55%;
+  margin: auto;
+  text-align: left;
+
+}
+
+.copyright{
+  color: #EAF6F6;
+  font-size: 0.75rem;
+}
+
+.profile_img{
+  float: left;
+  margin-right: 20px;
+  width: 17rem;
+  border-radius: 100%;
+}
+
+.coding_img {
+  width: 43%;
+  float: right;
+  margin-left: 30px;
+}
+
+.skill-row {
+  width: 80%;
+  margin: auto auto 100px auto;
+  text-align: left;
+}
+
+.experience{
+  margin-top: 0;
+}
+
+
+.skills{
+  text-align: center;
+}
+
+::selection{
+  color: #fff;
+  background: #6665ee;
+}
+
+.skill-bars{
+  padding: 25px 30px;
+  width: 600px;
+  background: #00adb5;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  margin: auto;
+}
+
+.skill-bars .bar{
+  margin: 20px 0;
+}
+
+.skill-bars .bar .info{
+  margin-bottom: 5px;
+}
+
+.skill-bars .bar .info span{
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+
+@keyframes showText {
+  100%{
+    opacity: 1;
+  }
+}
+
+.skill-bars .bar .progress-line{
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+              0 1px rgba(255,255,255,0.8);
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+
+.bar .progress-line span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #52616b;
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.bar .progress-line.html span{
+  width: 90%;
+}
+
+.bar .progress-line.css span{
+  width: 87%;
+}
+
+.bar .progress-line.javascript span{
+  width: 85%;
+}
+.bar .progress-line.python span{
+  width: 95%;
+}
+.bar .progress-line.c span{
+  width: 75%;
+}
+.bar .progress-line.swift span{
+  width: 90%;
+}
+.bar .progress-line.java span{
+  width: 70%;
+}
+.bar .progress-line.french span{
+  width: 100%;
+}
+.bar .progress-line.english span{
+  width: 100%;
+}
+.progress-line span::before{
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after{
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: #000;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100%{
+    opacity: 1;
+  }
+}
+
+.progress-line.html span::after{
+  content: "90%";
+}
+.progress-line.css span::after{
+  content: "87%";
+}
+.progress-line.javascript span::after{
+  content: "85%";
+}
+.progress-line.python span::after{
+  content: "95%";
+}
+.progress-line.c span::after{
+  content: "75%";
+}
+.progress-line.java span::after{
+  content: "70%";
+}
+.progress-line.swift span::after{
+  content: "90%";
+}
+.progress-line.french span::after{
+  content: "100%";
+}
+.progress-line.english span::after{
+  content: "100%";
+}
+
+.contact-message{
+  width: 40%;
+  margin: 20px auto 40px;
+}
+
+.btn {
+  background: #07e5ed;
+  background-image: -webkit-linear-gradient(top, #07e5ed, #b9cc29);
+  background-image: -moz-linear-gradient(top, #07e5ed, #b9cc29);
+  background-image: -ms-linear-gradient(top, #07e5ed, #b9cc29);
+  background-image: -o-linear-gradient(top, #07e5ed, #b9cc29);
+  background-image: linear-gradient(to bottom, #07e5ed, #b9cc29);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 1px 3px 0px #1c101c;
+  -webkit-box-shadow: 2px 3px 3px #120e12;
+  -moz-box-shadow: 2px 3px 3px #120e12;
+  box-shadow: 2px 3px 3px #120e12;
+  font-family: 'lobster', cursive;
+  color: #f5f5f5;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin: 50px auto;
+}
+
+.btn:hover {
+  background: #c7ae0c;
+  background-image: -webkit-linear-gradient(top, #c7ae0c, #34d9b8);
+  background-image: -moz-linear-gradient(top, #c7ae0c, #34d9b8);
+  background-image: -ms-linear-gradient(top, #c7ae0c, #34d9b8);
+  background-image: -o-linear-gradient(top, #c7ae0c, #34d9b8);
+  background-image: linear-gradient(to bottom, #c7ae0c, #34d9b8);
+  text-decoration: none;
+}
