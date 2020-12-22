@@ -52,7 +52,7 @@ td {
 
 
 .top-container {
-  background-image: url("/Users/lindiechenou/Desktop/Web Development/CSS-My Site/Image/background1.jpg");
+  background-image: url("background1.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
